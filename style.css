@@ -99,14 +99,22 @@ header
     height: auto;
 }
 
-.menu-pc {
+.hamburger-btn {
+    display: none;
+}
+
+.menu-sp {
+    display: none;
+}
+
+.menu-icons {
     display: flex;
     width: 55%;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.menu-pc li {
+.menu-icon a {
     font-weight: bold;
 }
 
