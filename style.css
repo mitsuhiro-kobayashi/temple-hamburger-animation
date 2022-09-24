@@ -1,0 +1,408 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+html {
+    /* スムーススクロール */
+    scroll-behavior: smooth;
+}
+
+.transition {
+    transition: none !important;
+}
+
+/*********
+body
+**********/
+
+html,
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*********
+common
+**********/
+/*********
+CTAボタンの白色と緑色
+**********/
+.common-btn-white {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 1% 5%;
+    border: solid 0.5px;
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+}
+.common-btn-white a {
+    font-size: larger;
+
+}
+.common-btn-green {
+    background-color: #00abae;
+    border-radius: 50px;
+    padding: 1% 6%;
+    border: none;
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+}
+.common-btn-green a {
+    color: #fff;
+    font-size: larger;
+    display: block;
+    text-align: center;
+}
+
+.common-title-h2 {
+    font-size: 30px;
+    color: #00abae;
+    font-weight: bold;
+    text-align: center;
+    padding: 5%;
+}
+
+.common-title-h2::after {
+    content: '';
+    display: block;
+    width: 5%;
+    height: 3px;
+    background-color: #00abae;
+    transform: translate(950%);
+    margin-top: 1rem;
+}
+
+.common-title-h3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*********
+header
+**********/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    width: 180px;
+    margin: 13px 0 13px 100px;
+}
+
+.header h1 a img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-pc {
+    display: flex;
+    width: 55%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-pc li {
+    font-weight: bold;
+}
+
+.menu-icon-contact {
+    background-color: #00abae;
+    border-radius: 50px;
+    padding: 2% 4%
+}
+
+.menu-icon-contact a {
+    color: #fff;
+}
+
+.menu-sp {
+    display: none;
+}
+/*********
+hamburger-menu
+**********/
+.hamburger-btn {
+    display: none;
+}
+.modal-sp {
+    display: none;
+}
+
+/*********
+footer
+**********/
+.footer {
+    background-color: #303030;
+    padding: 50px 0;
+}
+.footer p {
+    color: #fff;
+    text-align: center;
+}
+
+/*********
+front-fv
+**********/
+
+#front-fv {
+    position: relative;
+    height: 400px;
+}
+
+#front-fv h2 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    color: #fff;
+    font-size: 35px;
+}
+
+/*********
+about
+**********/
+
+#about {
+    margin: 0 30px;
+}
+.about-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-contents li {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.about-contents li img {
+    width: 100%;
+}
+
+.about-contents p {
+    margin-top: 15px;
+}
+
+/*********
+service
+**********/
+
+#service {
+    background-color: #eef8fa;
+    margin-top: 50px;
+    padding: 50px 150px;
+}
+
+.service-contents {
+    display: flex;
+    justify-content: space-around;
+}
+.service-content {
+    width: 33.333333333%;
+    margin: 0 10px;
+    background-color: #fff;
+}
+
+.service-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.service-content p {
+    margin: 8%;
+}
+
+/*********
+News
+**********/
+.front-news {
+    border-bottom: 0.3px solid #DDDDDD;
+    margin: 0 10%;
+    padding: 2% 5%;
+}
+.front-news time {
+    background-color: #EEEEEE;
+    border-radius: 50px;
+    padding: 0.5% 0.5%;
+    color: #c4a18e;
+    margin-right: 50px;
+}
+.front-news a {
+    font-size: 10px;
+    display: flex;
+}
+
+.front-news h3 {
+    font-size: 18px;
+    text-align: left;
+}
+
+
+/*********
+contact
+**********/
+#contact {
+    background-color: #eef8fa;
+    margin-top: 50px;
+    padding: 50px 150px;
+}
+
+/*********
+スクロールボタンscroll-button
+**********/
+.scroll-button {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 2px solid #949494;
+    text-align: center;
+    z-index: 100;
+}
+.scroll-button-arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-top:  3px solid #00abae;
+    border-left: 3px solid #00abae;
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+
+
+/*********
+media
+**********/
+@media screen and (max-width: 768px) {
+    /*********
+    hamburger-menu
+    **********/
+    .hamburger-btn {
+        display: block;
+    }
+    .hamburger-btn i {
+        color: #00abae;
+        display: flex;
+    }
+    .add-menu-sp {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #ffffffdd;
+        display: block;
+        width: 70%;
+        height: 100vw;
+        padding: 20px 0;
+        z-index: 2;
+    }
+    .add-menu-sp li {
+        font-weight: bold;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .add-menu-sp li:last-child a {
+        display: block;
+        color: #fff;
+        background: #00abae;
+        width: fit-content;
+        margin: auto;
+        padding: 10px 60px;
+        border-radius: 50px;
+    }
+    .add-modal-sp {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: #000000aa;
+        z-index: 1;
+    }
+    /*********
+    header
+    **********/
+    .header {
+        margin-right: 30px;
+    }
+    .header h1 {
+        margin: 10px 0 10px 20px;
+    }
+    .menu-pc {
+        display: none;
+    }
+
+    #front-fv {
+        height: 500px;
+    }
+
+    #front-fv h2 {
+        font-size: 25px;
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        line-height: 3em;
+    }
+    .common-title-h2 {
+        padding: 20%;
+    }
+
+    .common-title-h2::after {
+        width: 20%;
+        transform: translate(200%);
+    }
+    .about-contents {
+        display: block;
+    }
+    .about-contents li {
+        width: 100%;
+        margin: 3% 1%;
+    }
+    .about-contents li img {
+        margin-bottom: 10%;
+    }
+    #service {
+        padding: 0;
+    }
+    .service-contents {
+        display: block;
+        padding: 3%;
+    }
+    .service-content {
+        width: 100%;
+        margin: 0%;
+    }
+    .service-content img {
+        width: 100%;
+    }
+    .front-news {
+        padding: 0;
+        margin: 0;
+    }
+    .front-news a {
+    display: block;
+    margin: 5%;
+    }
+    .front-news h3 {
+        margin-top: 5%;
+    }
+    .common-btn-white {
+        padding: 3% 15%;
+    }
+    .common-btn-green {
+        padding: 3% 15%;
+    }
+    #contact {
+        padding: 0 0 10% 0;
+    }
+}
