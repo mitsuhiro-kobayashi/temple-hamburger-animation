@@ -1,15 +1,11 @@
-var btn = document.getElementById("js-btn");
-var menu = document.getElementById("js-menu");
-var modal = document.getElementById("js-modal");
+const ham = document.querySelector('#js-hamburger'); 
+//js-hamburgerの要素を取得し、変数hamに格納
+const nav = document.querySelector('#js-nav'); 
+//js-navの要素を取得し、変数navに格納
 
-// ボタンがクリックされたらclassを追加
-btn.addEventListener("click",function(){
-    menu.classList.add("add-menu-sp");
-    modal.classList.add("add-modal-sp");
-});
+ham.addEventListener('click', function () { 
+    //ハンバーガーメニューをクリックしたら
+    ham.classList.toggle('active'); // ハンバーガーメニューにactiveクラスを付け外し
+    nav.classList.toggle('active'); // ナビゲーションメニューにactiveクラスを付け外し
 
-// モーダルがクリックされたらclassを削除
-modal.addEventListener("click",function(){
-    menu.classList.remove("add-menu-sp");
-    modal.classList.remove("add-modal-sp");
 });
