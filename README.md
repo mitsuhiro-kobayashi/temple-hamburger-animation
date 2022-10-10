@@ -2,7 +2,7 @@
 
 [webサイトを見る](https://temple-hamburger-animation.herokuapp.com/)
 
-参考サイトはこちら
+ハンバーガーメニュー作成の際の参考サイトはこちら
 https://breezegroup.co.jp/202007/js-hamburger-menu/
 
 ![前](https://user-images.githubusercontent.com/90839596/192246665-12466b12-586e-4c22-8224-6f5dbbd6ce03.png)
